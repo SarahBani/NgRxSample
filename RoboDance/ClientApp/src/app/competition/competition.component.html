@@ -1,0 +1,24 @@
+<div class="container">
+
+  <app-fetch-robots-status *ngIf="!(hasRobotsFetched$ | async); else robotsFetched;">
+  </app-fetch-robots-status>
+
+  <ng-template #robotsFetched>
+    <div class="row">
+      <div class="col-6">
+        <app-team [teamNo]="1" [hasArranged]="(hasTeamsArranged$ | async)[0]"></app-team>
+      </div>
+      <div class="col-6">
+        <app-team [teamNo]="2" [hasArranged]="(hasTeamsArranged$ | async)[1]"></app-team>
+      </div>
+    </div>
+    <div class="row justify-content-center"
+         *ngIf="(hasTeamsArranged$ | async)[0] && (hasTeamsArranged$ | async)[1]">
+      <span class="fa fa-play-circle button {{ (isLoading$ | async) ? 'disabled': '' }}"
+            title="Start Competition" (click)="onStartCompetition()"></span>
+    </div>
+  </ng-template>
+
+</div>
+
+<app-spinner *ngIf="isLoading$ | async"></app-spinner>

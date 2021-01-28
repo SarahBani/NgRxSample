@@ -1,0 +1,36 @@
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li>
+        <a [routerLink]="['/']">
+          <span class="fa fa-home"></span> Home
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/competition']">
+          <span class="fa fa-trophy"></span> Competition
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/leaderboard']" class="{{ (hasCompetitionFinished$ | async) ? '':'disabled' }}">
+          <span class="fa fa-list"></span> Leaderboard
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/about']">
+          <span class="fa fa-info pl-1"></span> About
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

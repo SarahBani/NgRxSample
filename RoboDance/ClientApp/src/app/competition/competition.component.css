@@ -1,0 +1,13 @@
+.container {
+  padding-bottom: 230px;
+}
+
+.fa-play-circle, .fa-stop-circle {
+  font-size: 100px;
+}
+
+.disabled {
+    color:#333;
+    cursor:default;
+}
+

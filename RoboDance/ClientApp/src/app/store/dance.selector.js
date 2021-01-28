@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.selectLeaderboard = exports.selectHasLeaderboardFetched = exports.selectHasCompetitionFinished = exports.selectCompetitionWinnerTeam = exports.selectTeamsMembers = exports.selectTeamsNames = exports.selectSelectiveRobots = exports.selectHasTeamsArranged = exports.selectHasTeamArrangementProblem = exports.selectHasRobotsFetched = exports.selectError = exports.selectHasApiConnectionProblem = exports.selectIsLoading = exports.selectDanceState = void 0;
+var store_1 = require("@ngrx/store");
+var fromDance = require("./dance.reducer");
+exports.selectDanceState = store_1.createFeatureSelector(fromDance.danceFeatureKey);
+exports.selectIsLoading = store_1.createSelector(exports.selectDanceState, function (state) { return state.isLoading; });
+exports.selectHasApiConnectionProblem = store_1.createSelector(exports.selectDanceState, function (state) { return state.hasApiConnectionProblem; });
+exports.selectError = store_1.createSelector(exports.selectDanceState, function (state) { return state.error; });
+exports.selectHasRobotsFetched = store_1.createSelector(exports.selectDanceState, function (state) { return state.hasRobotsFetched; });
+exports.selectHasTeamArrangementProblem = store_1.createSelector(exports.selectDanceState, function (state) { return state.hasTeamArrangementProblem; });
+exports.selectHasTeamsArranged = store_1.createSelector(exports.selectDanceState, function (state) { return state.hasTeamsArranged; });
+exports.selectSelectiveRobots = store_1.createSelector(exports.selectDanceState, function (state) { return state.selectiveRobots; });
+exports.selectTeamsNames = store_1.createSelector(exports.selectDanceState, function (state) { return state.teamsNames; });
+exports.selectTeamsMembers = store_1.createSelector(exports.selectDanceState, function (state) { return state.teamsMembers; });
+exports.selectCompetitionWinnerTeam = store_1.createSelector(exports.selectDanceState, function (state) { return state.winnerTeam; });
+exports.selectHasCompetitionFinished = store_1.createSelector(exports.selectDanceState, function (state) { return state.hasCompetitionFinished; });
+exports.selectHasLeaderboardFetched = store_1.createSelector(exports.selectDanceState, function (state) { return state.hasLeaderboardFetched; });
+exports.selectLeaderboard = store_1.createSelector(exports.selectDanceState, function (state) { return state.leaderboard; });
+//# sourceMappingURL=dance.selector.js.map

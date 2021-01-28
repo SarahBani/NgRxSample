@@ -1,0 +1,12 @@
+<div class="card text-white-50 {{ className$ | async }}">
+  <div class="card-body text-center">
+    <h4 class="card-title">Team {{ name$ | async }}</h4>
+    <span class="fa fa-refresh button" title="Arrange again" (click)="onRearrange()"></span>
+    <span class="fa fa-times button" title="Reset" (click)="onReset()"></span>
+
+    <app-team-member *ngFor="let member of members$ | async" [member]="member"></app-team-member>
+    <p class="card-text clearfix">
+      <b>Total Experience : </b><span>{{ totalExperience }} years</span>
+    </p>
+  </div>
+</div>

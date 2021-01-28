@@ -1,0 +1,46 @@
+.card {
+  background-color: #393939;
+  /*background-color: #9F2323;*/
+  border: 1px solid #191919;
+  /* box-shadow: #191919 2px 3px;*/
+}
+
+  .card.winner {
+    border: 1px solid #4ADD06;
+  }
+
+  .card.loser {
+    border: 1px solid #FF0000;
+  }
+
+h4 {
+  display: inline-block;
+}
+
+.winner h4 {
+  color: #4ADD06;
+}
+
+.loser h4 {
+  color: #FF0000;
+}
+
+.button.fa-refresh {
+  font-size: 30px;
+  float: right;
+}
+
+.button.fa-times {
+  font-size: 35px;
+  float: left;
+}
+
+  .button.fa-times:hover {
+    color: red;
+  }
+
+p {
+  color: #C6E2BA;
+  padding-top: 10px;
+  border-top: 1px solid #333;
+}

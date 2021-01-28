@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <b class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ itemNo }}">
+        <span class="fa fa-caret-right"></span>
+        <span>Dance-Off No {{ itemNo }}</span>
+      </a>
+    </b>
+    <span class="float-right text-white-50">{{ result.dancedAt | date:'MM/dd/yyyy h:mm:ss a' }}</span>
+  </div>
+  <div id="collapse{{ itemNo }}" class="panel-collapse collapse">
+    <div class="panel-body row">
+      <app-leaderboard-item-member class="col-6 text-center" [member]="result.winnerRobot" [isWinner]="true">
+      </app-leaderboard-item-member>
+      <app-leaderboard-item-member class="col-6 text-center" [member]="result.loserRobot">
+      </app-leaderboard-item-member>
+    </div>
+  </div>
+</div>

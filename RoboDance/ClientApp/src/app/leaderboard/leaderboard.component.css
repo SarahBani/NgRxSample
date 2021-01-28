@@ -1,0 +1,15 @@
+.container {
+  padding-bottom: 230px;
+}
+
+.panel-group {
+  background-color: #393939;
+  border: 1px solid #191919;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+h3 {
+  color: #BFD81A;
+  padding: 10px;
+}

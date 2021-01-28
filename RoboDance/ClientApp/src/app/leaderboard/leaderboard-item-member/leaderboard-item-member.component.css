@@ -1,0 +1,11 @@
+img {
+  width: 50px;
+}
+
+.winner {
+  color: #42BC05;
+}
+
+.loser {
+  color: #FF0000;
+}

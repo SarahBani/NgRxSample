@@ -1,0 +1,19 @@
+footer {
+  background-color: #778770;
+  color: #000;
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 5px;
+  font-size: 14px;
+  z-index: 100;
+}
+
+a {
+  color: #C6E2BA;
+}
+
+  a:hover {
+    color: #5FB538;
+  }

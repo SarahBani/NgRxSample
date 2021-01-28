@@ -1,0 +1,55 @@
+body {
+  background-color: #232323;
+  color: #C6E2BA;
+  position: relative;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-left: 100px;
+  margin-bottom: 40px;
+}
+
+a {
+  color: #C6E2BA;
+}
+
+  a:hover {
+    color: #93E070;
+  }
+
+.button {
+  color: #C6E2BA;
+  cursor: pointer;
+}
+
+  .button:hover {
+    color: #93E070;
+  }
+
+/*********** ScrollBar **************/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2EA1A5;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #56D1EA;
+  }
+
+/************************************/

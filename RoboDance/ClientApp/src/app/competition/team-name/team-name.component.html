@@ -1,0 +1,15 @@
+<div class="container">
+  <form (ngSubmit)="onCreate()" #f="ngForm">
+
+    <label for="name{{ teamNo }}">Enter Team {{ teamNo }} Name : </label>
+    <div class="input-group">
+      <input type="text" id="name{{ teamNo }}" name="name" class="form-control col-8" ngModel required />
+      <div class="input-group-append">
+        <button class="btn btn-success px-4" type="submit"
+                [disabled]="!f.valid || (isLoading$ | async)">OK</button>
+      </div>
+    </div>
+
+  </form>
+</div>
+<br />

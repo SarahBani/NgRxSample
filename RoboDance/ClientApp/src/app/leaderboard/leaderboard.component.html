@@ -1,0 +1,25 @@
+<div class="container">
+
+  <app-fetch-leaderboard-status *ngIf="!(hasLeaderboardFetched$ | async); else hasLeaderboardFetched">
+  </app-fetch-leaderboard-status>
+
+  <ng-template #hasLeaderboardFetched>
+
+    <div class="panel-group" id="accordion">
+
+      <div class="text-center">
+        <h3>
+          Leaderboard
+        </h3>
+      </div>
+
+      <app-leaderboard-item *ngFor="let danceOffResult of danceOffResults$ | async; let i = index;"
+                            [itemNo]="i + 1" [result]="danceOffResult">
+      </app-leaderboard-item>
+    </div>
+
+  </ng-template>
+
+</div>
+
+<app-spinner *ngIf="isLoading$ | async"></app-spinner>

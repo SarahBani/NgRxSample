@@ -1,0 +1,19 @@
+.panel {
+  border-top: 1px solid #191919;
+  padding: 10px;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+  a span:first-of-type {
+    margin-right: 10px;
+  }
+
+.panel-collapse {
+  background-color: #FFF0B2;
+  border-radius: 5px;
+  margin-top: 10px;
+}

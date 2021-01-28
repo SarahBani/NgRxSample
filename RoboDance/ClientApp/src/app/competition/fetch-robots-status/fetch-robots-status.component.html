@@ -1,0 +1,11 @@
+<div class="container">
+
+  <div class="row text-center text-white px-4" *ngIf="!(hasApiConnectionProblem$ | async)">
+    <h4>Connecting to the API. Please wait ...</h4>
+  </div>
+
+  <div class="row text-center text-danger px-4" *ngIf="hasApiConnectionProblem$ | async">
+    <h4>Unable to connect to the API!</h4>
+    <span class="fa fa-refresh button" title="Try Again" (click)="onRefetch()"></span>
+  </div>
+</div>

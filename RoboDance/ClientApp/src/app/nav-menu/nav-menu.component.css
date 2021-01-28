@@ -1,0 +1,42 @@
+nav {
+  position: absolute;
+  z-index: 1000;
+}
+
+button {
+  border: 1px solid #333;
+  border-radius: 3px;
+  background-color: transparent;
+  padding: 3px 10px;
+}
+
+  button:hover {
+    background-color: #191919;
+    border-color: #191919;
+  }
+
+  button div {
+    width: 35px;
+    height: 2px;
+    margin: 6px 0;
+    background-color: #C6E2BA;
+  }
+
+ul {
+  background-color: #191919;
+  border-radius: 4px;
+  width: 150px;
+}
+
+li {
+  margin: 10px;
+}
+
+a.disabled {
+  color: #393939;
+  cursor:default;
+}
+
+  a.disabled:hover {
+    text-decoration: none;
+  }
