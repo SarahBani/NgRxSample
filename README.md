@@ -1,0 +1,14 @@
+<p>
+    This project is implemented in the following technologies and frameworks:
+</p>
+
+<ul>
+  <li><em>Angular 11.0.7</em></li>
+  <li><em>JavaScript / ES6</em></li>
+  <li><em>TypeScript</em></li>
+  <li><em>NgRx 10.1.2 for State Management</em></li>
+  <li><em>HTML 5</em></li>
+  <li><em>CSS 3</em></li>
+  <li><em>Bootstrap 4.5.3</em></li>
+  <li><em>Jasmine 3.6.0 & Karma (Test Runner) 5.1.1 for Unit Testing</em></li>
+</ul>
